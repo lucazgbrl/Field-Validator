@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Validator</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main>
+      <h1>Validate Me!</h1>
+      <form>
+        <input type="text" name="text" id="validate-text">
+        <select name="validation-type" id="validation-type" style="display: block;">
+          <option value="Default">- Escolha a validação -</option>
+          <option value="CPF">CPF</option>
+          <option value="E-mail">E-mail</option>
+          <option value="Name">Nome</option>
+          <option value="Password">Senha Forte</option>
+        </select>
+        <button id="validate">Validar</button>
+        <p id="result"> Digite algo, selecione o tipo de validação e clique em validar </p>
+      </form>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
